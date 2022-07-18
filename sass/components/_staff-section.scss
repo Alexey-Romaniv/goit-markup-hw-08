@@ -1,0 +1,61 @@
+.staff {
+  background-color: $main-bg-color;
+}
+.staff__list {
+  display: flex;
+  gap: 30px;
+}
+.staff__item {
+  background-color: $white-color;
+  border-radius: 0 0 4px 4px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.staff__content {
+  padding: 30px 32px;
+}
+.staff__subtitle {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.staff__descr {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.social {
+  @include centeredFlex(inline-flex);
+  gap: 10px;
+}
+
+.social__link {
+  @include centeredFlex;
+  width: 44px;
+  height: 44px;
+
+  color: $icon-color;
+  background-color: $white-color;
+  border-radius: 50%;
+
+  transition: color $time-animation $cubic-bezier, background-color $time-animation $cubic-bezier;
+}
+.social__link:hover,
+.social__link:focus {
+  color: $white-color;
+  background-color: $accent-color;
+}
+.social__icon {
+  fill: currentColor;
+
+  width: 20px;
+  height: 20px;
+}

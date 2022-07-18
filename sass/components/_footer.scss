@@ -1,0 +1,103 @@
+.footer {
+  padding: 60px 0;
+  background-color: $secondary-bg-color;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: $white-color;
+}
+
+.footer__address {
+  margin-right: 70px;
+
+  max-width: 231px;
+  width: 100%;
+}
+.footer__list {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.footer__link {
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color $time-animation $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &--map {
+    color: $white-color;
+  }
+}
+
+.footer__caption {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: $white-color;
+}
+
+.social__link--dark {
+  color: $white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+// --------SUBSCRIBE
+
+.footer__subs {
+  margin-left: auto;
+}
+.footer__form {
+  display: flex;
+}
+
+.footer__input {
+  margin-right: 12px;
+  padding-left: 16px;
+
+  width: 358px;
+  height: auto;
+
+  font-size: 16px;
+  color: $white-color;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  outline: none;
+  transition: border-color $time-animation $cubic-bezier;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.footer__button {
+  @extend %button;
+}
+.icon-telegram {
+  margin-left: 10px;
+
+  fill: currentColor;
+}

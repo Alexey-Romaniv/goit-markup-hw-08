@@ -1,0 +1,27 @@
+.company__list {
+  display: flex;
+  gap: 30px;
+}
+.company__link {
+  @include centeredFlex;
+
+  width: 192px;
+  height: 92px;
+
+  color: $icon-color;
+
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+  transition: color $time-animation $cubic-bezier, background-color $time-animation $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+.company__icon {
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
+}

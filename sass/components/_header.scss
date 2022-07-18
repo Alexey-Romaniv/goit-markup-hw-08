@@ -1,0 +1,64 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: 305px;
+}
+.nav__list {
+  display: flex;
+  gap: 50px;
+}
+.nav__link {
+  @extend %header-link;
+  color: $title-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.nav__link--current {
+  position: relative;
+
+  color: $accent-color;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+}
+
+.contacts {
+  display: flex;
+  gap: 30px;
+}
+.contacts__link {
+  @extend %header-link;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contacts__icon {
+  fill: currentColor;
+}
