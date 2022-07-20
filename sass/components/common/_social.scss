@@ -1,0 +1,28 @@
+.social {
+  @include centeredFlex(inline-flex);
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social__link {
+  @include centeredFlex;
+  width: 44px;
+  height: 44px;
+
+  color: $icon-color;
+  background-color: $white-color;
+  border-radius: 50%;
+
+  transition: color $time-animation $cubic-bezier, background-color $time-animation $cubic-bezier;
+}
+.social__link:hover,
+.social__link:focus {
+  color: $white-color;
+  background-color: $accent-color;
+}
+.social__icon {
+  fill: currentColor;
+
+  width: 20px;
+  height: 20px;
+}

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -19,10 +20,14 @@ Use a better box model (opinionated).
 3. Use a more readable tab size (opinionated).
 */
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -moz-tab-size: 4; /* 3 */
-  tab-size: 4; /* 3 */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
 }
 
 /*
@@ -34,8 +39,10 @@ Sections
 2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  margin: 0; /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+  margin: 0;
+  /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* 2 */
 }
 
 /*
@@ -47,8 +54,10 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
 }
 
 /*
@@ -78,8 +87,10 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
@@ -117,8 +128,10 @@ Tabular data
 2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
 }
 
 /*
@@ -134,10 +147,14 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
@@ -208,8 +225,10 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 [type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
@@ -224,8 +243,10 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /*
@@ -312,7 +333,8 @@ body {
   padding: 94px 0;
 }
 
-.contacts__link, .nav__link {
+.contacts__link,
+.nav__link {
   display: block;
   padding: 32px 0;
   font-style: normal;
@@ -321,7 +343,9 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__button, .footer__button, .hero_button {
+.form__button,
+.footer__button,
+.hero_button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,7 +363,13 @@ body {
   background-color: #2196f3;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__button:hover, .footer__button:hover, .hero_button:hover, .form__button:focus, .footer__button:focus, .hero_button:focus {
+
+.form__button:hover,
+.footer__button:hover,
+.hero_button:hover,
+.form__button:focus,
+.footer__button:focus,
+.hero_button:focus {
   background-color: #188ce8;
 }
 
@@ -371,6 +401,7 @@ body {
 .header {
   border-bottom: 1px solid #ececec;
 }
+
 .header__container {
   display: flex;
   align-items: center;
@@ -390,7 +421,9 @@ body {
 .nav__link {
   color: #212121;
 }
-.nav__link:hover, .nav__link:focus {
+
+.nav__link:hover,
+.nav__link:focus {
   color: #2196f3;
 }
 
@@ -398,6 +431,7 @@ body {
   position: relative;
   color: #2196f3;
 }
+
 .nav__link--current::after {
   content: "";
   position: absolute;
@@ -420,7 +454,9 @@ body {
   gap: 10px;
   color: #757575;
 }
-.contacts__link:hover, .contacts__link:focus {
+
+.contacts__link:hover,
+.contacts__link:focus {
   color: #2196f3;
 }
 
@@ -598,7 +634,9 @@ body {
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.company__link:hover, .company__link:focus {
+
+.company__link:hover,
+.company__link:focus {
   color: #2196f3;
   border-color: #2196f3;
 }
@@ -613,6 +651,7 @@ body {
   padding: 60px 0;
   background-color: #2f303a;
 }
+
 .footer__container {
   display: flex;
   align-items: baseline;
@@ -642,9 +681,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__link:hover, .footer__link:focus {
+
+.footer__link:hover,
+.footer__link:focus {
   color: #2196f3;
 }
+
 .footer__link--map {
   color: #ffffff;
 }
@@ -683,12 +725,15 @@ body {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer__input:hover, .footer__input:focus {
+
+.footer__input:hover,
+.footer__input:focus {
   border-color: #2196f3;
 }
 
@@ -746,7 +791,9 @@ body {
   background-color: transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-button:hover, .close-button:focus {
+
+.close-button:hover,
+.close-button:focus {
   color: #2196f3;
 }
 
@@ -784,9 +831,11 @@ body {
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .input-container:focus-within .form__input {
   border-color: #2196f3;
 }
+
 .input-container:focus-within {
   color: #2196f3;
 }
@@ -824,9 +873,11 @@ body {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form__comment:focus {
   border-color: #2196f3;
 }
+
 .form__comment::placeholder {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -848,7 +899,7 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox__input:checked + .checkbox__icon {
+.checkbox__input:checked+.checkbox__icon {
   border-color: #2196f3;
   background-color: #2196f3;
   background-image: url(../images/icon-check.svg);
@@ -894,7 +945,9 @@ body {
   background-color: #f5f4fa;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__btn:hover, .portfolio__btn:focus {
+
+.portfolio__btn:hover,
+.portfolio__btn:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -920,7 +973,9 @@ body {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__link:hover, .portfolio__link:focus {
+
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -962,7 +1017,9 @@ body {
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__link:hover .overlay, .portfolio__link:focus .overlay {
+
+.portfolio__link:hover .overlay,
+.portfolio__link:focus .overlay {
   transform: translateY(0);
 }
 
@@ -970,4 +1027,6 @@ body {
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
