@@ -67,6 +67,7 @@
       url(../images/index/desktop/hero-desktop.jpg);
     background-position: center;
     background-size: 1600px 600px;
+    max-width: 1600px;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
