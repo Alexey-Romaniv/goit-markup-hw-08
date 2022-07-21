@@ -1229,6 +1229,7 @@ body {
 .checkbox__condition {
   color: #2196f3;
   text-decoration: underline;
+  text-underline-position: under;
 }
 
 .form__button {
