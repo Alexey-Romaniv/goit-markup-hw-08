@@ -1036,6 +1036,9 @@ body {
     flex-direction: column;
     gap: 9px;
   }
+  .footer__social {
+    margin-bottom: 0;
+  }
   .footer__subs {
     margin-left: auto;
   }
@@ -1050,7 +1053,7 @@ body {
   }
   .footer__button {
     margin: 0;
-    width: 100%;
+    width: 200px;
     height: 50px;
   }
 }
