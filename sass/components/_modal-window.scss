@@ -194,3 +194,21 @@
   @extend %button;
   margin: 0 auto;
 }
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    min-height: 581px;
+  }
+  .modal__caption {
+    line-height: 1.15;
+  }
+
+  .checkbox {
+    margin-bottom: 30px;
+  }
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
