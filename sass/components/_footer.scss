@@ -140,13 +140,13 @@
     margin-left: auto;
   }
   .footer__form {
-    display: inline-flex;
+    display: flex;
     gap: 12px;
   }
   .footer__input {
     margin-bottom: 0;
     padding-left: 16px;
-    display: inline-block;
+    display: block;
 
     width: 358px;
     height: 50px;
