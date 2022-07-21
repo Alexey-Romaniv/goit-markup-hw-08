@@ -1045,8 +1045,6 @@ body {
   }
   .footer__input {
     margin-bottom: 0;
-    padding-left: 16px;
-    display: block;
     width: 358px;
     height: 50px;
   }
